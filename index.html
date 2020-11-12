@@ -1,0 +1,159 @@
+<!-- O que precisa ser feito:
+    criação da matriz
+    organizar as palavras dentro da matriz
+    organizar as perguntas a partir do arquivo word na pagina
+    fazer a function verificar todas as palavras e emitir alerta de qual palavra tá errada
+    Se possivel colocar a voz do faustão quando errar 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavras cruzadas</title>
+</head>
+<body>
+    <div id="perguntas">
+        <p>1 - Teste<span id="amarelo">---</span></p>
+    </div>
+
+    <!-- Matriz  -->
+    <div id="matriz">
+        <!-- ul - coluna
+             li - linha
+            
+        cada coluna tem n linhas 
+
+        cada coluna representa uma letra
+
+        cada linha representa um numero
+
+        exemplo palavra "sim" é feita juntando a1 + a2+ a3 
+            -->
+        <ul>
+            <li>
+                <input type="text" name="" class="borderAmarelo" id="a1">
+            </li>
+            <li>
+                <input type="text" name="" class="borderAmarelo" id="a2">
+            </li>
+            <li>
+                <input type="text" name="" class="borderAmarelo" id="a3">
+            </li>
+            <li class="off">
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <input type="text" name="" id="b1">
+            </li>
+            <li>
+                <input type="text" name="" id="b2">
+            </li>
+            <li>
+                <input type="text" name="" id="b3">
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+            <li>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ao clicar na funcion validar ele chama uma function que verifica se o valor dos imput forma a palavra, caso contrario msg de erro  -->
+    <button onclick="sim()">validar</button>
+</body>
+</html>
+
+<script>
+
+    var valorA1;
+    var valorA2;
+    var valorA3;
+    function sim(){
+        valorA1 = a1.value;
+        valorA2 = a2.value;
+        valorA3 = a3.value;
+        if(valorA1 == "s" && valorA2 == "i" && valorA3 == "m"){
+            alert("Sim");
+        }else{
+            alert("errouuuu");
+        }
+    }
+</script>
+<style>
+    ul{
+        float: left;
+        padding: 0;
+    }
+    li{
+        border: 1px solid black;
+        height: 25px;
+        width: 25px;
+        list-style: none;
+    }
+    input{
+        border:none;
+        height:20px;
+        width:20px;
+    }
+    .off{
+        background-color: gray;
+    }
+    #amarelo{
+        color:yellow;
+        background-color:yellow;
+
+    }
+    .borderAmarelo{
+        border: 1px solid yellow;
+    }
+</style>
+
