@@ -7,20 +7,343 @@
 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palavras cruzadas</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="perguntas">
+    <div class="titulo">
+        <h2>Bem Vindo a nossa Cruzadinha</h2>
+    </div>  
+
+    <div class="container">
+        <div class="box_maior">
+            <div class="minibox1">
+                <div class="perguntas">
+                    <div id="div_quest"></div>
+                    <br>
+                </div>
+                <div class="pontos"> <h3> Pontos :</h3><div id="total"></div></div>
+            </div>
+            <div class="minibox2">
+                <div class="img_cruz">
+                    <div id="resp_end"></div>
+                    <button id="btn1" onclick="btn01()">1</button>
+                    <button id="btn2" onclick="btn02()">2</button>
+                    <button id="btn3" onclick="btn03()">3</button>
+                    <button id="btn4" onclick="btn04()">4</button>                                      
+                    <button id="btn5" onclick="btn05()">5</button> 
+                    <button id="btn6" onclick="btn06()">6</button>
+                    <button id="btn7" onclick="btn07()">7</button>
+                    <button id="btn8" onclick="btn08()">8</button>
+                    <button id="btn9" onclick="btn09()">9</button>
+                    <button id="btn10" onclick="btn010()">10</button>
+                    <button id="btn11" onclick="btn011()">11</button>                    
+                    <button id="btn12" onclick="btn012()">12</button>
+                    <button id="btn13" onclick="btn013()">13</button>
+                    <button id="btn14" onclick="btn014()">14</button>
+                    <button id="btn15" onclick="btn015()">15</button>
+                    <button id="btn16" onclick="btn016()">16</button>                    
+                    <img src="Imagens/cruzadinha_fundo .png" alt="">
+
+                    
+                </div> 
+            </div>
+        </div>
+    </div>
+     
+</body>
+
+</html>
+
+<script>
+
+    var ponto = 0;
+
+    function btn01(){
+        div_quest.innerHTML= `<div class = "question">
+             Central Process Unit, também conhecido como processador
+             é responsavel por calcular e realizar determinadas pelo usuario.
+             <input type="text" id="resp1">
+             <button class = "btn_bonito" onclick= "resp_btn1()"> Responder </button>
+             </div>`
+        
+    }
+
+    function resp_btn1() {
+        if (resp1.value == 'cpu' || resp1.value == 'CPU' || resp1.value == 'Cpu' ) {
+            resp_end.innerHTML += `<h4 class = "r1">C<br><br>P<br><br>U <h4>`;
+            ponto = ponto + 50;
+            total.innerHTML =`${ponto}`;
+        } else {
+            ponto = ponto - 50;
+            total.innerHTML = `${ponto}`;
+            alert('errooou')
+        }
+    }
+
+    function btn2(){
+        div_quest.innerHTML= `<div class = "question">
+             Unidade logica aritimetica é uma circuito digital 
+             que realiza operações de adição e booleana AND.
+             <input type="text" id="resp2">
+             <button class = "btn_bonito" onclick= "resp_btn2()"> Responder </button>
+             </div>`
+        
+    }
+
+    function resp_btn2() {
+        if (resp2.value == 'ula' || resp2.value == 'ULA' || resp2.value == 'Ula' ) {
+            resp_end.innerHTML += `<h4 class = "r2">ULA<h4>`;
+            ponto = ponto + 50;
+            total.innerHTML =`${ponto}`;
+        } else {
+            ponto = ponto - 50;
+            total.innerHTML = `${ponto}`;
+            alert('errooou')
+        }
+    }   
+    
+    
+    function btn03(){
+        div_quest.innerHTML= `<div class = "question">
+            circuitos digitais capaz de armazenar e deslocar informações
+             binarias e são tipicamentes usados como dispositivos 
+             de armazenamentos temporario, se localiza proximo da cpu.
+             <input type="text" id="resp3">
+             <button class = "btn_bonito" onclick= "resp_btn3()"> Responder </button>
+             </div>`
+        
+    }
+
+    function resp_btn3() {
+        if (resp3.value == 'registradores' || resp3.value == 'Registradores' || resp3.value == 'REGISTRADORES' ) {
+            resp_end.innerHTML += `<h4 class = "r3">REGISTRADORES<h4>`;
+            ponto = ponto + 50;
+            total.innerHTML =`${ponto}`;
+        } else {
+            ponto = ponto - 50;
+            total.innerHTML = `${ponto}`;
+            alert('errooou')
+        }
+    }    
+
+    function btn4(){
+        div_quest.innerHTML= `<div class = "question">
+             É responsável por dar agilidade e velocidade para o funcionamento do sistema.
+             <input type="text" id="resp4">
+             <button class = "btn_bonito" onclick= "resp_btn4()"> Responder </button>
+             </div>`
+        
+    }
+
+    function resp_btn4() {
+        if (resp4.value == 'ram' || resp4.value == 'RAM' || resp4.value == 'Ram' ) {
+            resp_end.innerHTML += `<h4 class = "r4">RAM<h4>`;
+            ponto = ponto + 50;
+            total.innerHTML =`${ponto}`;
+        } else {
+            ponto = ponto - 50;
+            total.innerHTML = `${ponto}`;
+            alert('errooou')
+        }
+    }
+
+    function btn5(){
+        div_quest.innerHTML= `<div class = "question">
+             Suas informações foram gravadas pelo fabricante apenas uma vez
+             e após isso não podem ser alteradas ou apagas, apenas acessadas 
+             <input type="text" id="resp5">
+             <button class = "btn_bonito" onclick= "resp_btn5()"> Responder </button>
+             </div>`
+        
+    }
+
+    function resp_btn5() {
+        if (resp5.value == 'rom' || resp5.value == 'ROM' || resp5.value == 'Rom' ) {
+            resp_end.innerHTML += `<h4 class = "r5">ROM<h4>`;
+            ponto = ponto + 50;
+            total.innerHTML =`${ponto}`;
+        } else {
+            ponto = ponto - 50;
+            total.innerHTML = `${ponto}`;
+            alert('errooou')
+        }
+    }
+
+    function btn6(){
+        div_quest.innerHTML= `<div class = "question">
+             Sigla de Erasable Programmable Read-Only Memory
+             <input type="text" id="resp6">
+             <button class = "btn_bonito" onclick= "resp_btn6()"> Responder </button>
+             </div>`
+        
+    }
+
+    function resp_btn6() {
+        if (resp6.value == 'eprom' || resp6.value == 'EPROM' || resp6.value == 'Eprom' ) {
+            resp_end.innerHTML += `<h4 class = "r6">EPROM<h4>`;
+            ponto = ponto + 50;
+            total.innerHTML =`${ponto}`;
+        } else {
+            ponto = ponto - 50;
+            total.innerHTML = `${ponto}`;
+            alert('errooou')
+        }
+    }
+
+    function btn7(){
+        div_quest.innerHTML= `<div class = "question">
+             Chip de memória de computador que mantém informações
+             armazenadas sem a necessidade de uma fonte de energia.
+             <input type="text" id="resp7">
+             <button class = "btn_bonito" onclick= "resp_btn7()"> Responder </button>
+             </div>`
+        
+    }
+
+    function resp_btn7() {
+        if (resp7.value == 'flash' || resp7.value == 'FLASH' || resp7.value == 'Flash' ) {
+            resp_end.innerHTML += `<h4 class = "r7">FLASH<h4>`;
+            ponto = ponto + 50;
+            total.innerHTML =`${ponto}`;
+        } else {
+            ponto = ponto - 50;
+            total.innerHTML = `${ponto}`;
+            alert('errooou')
+        }       
+    }
+
+    function btn8(){
+        div_quest.innerHTML= `<div class = "question">
+             Também conhecida como memória auxiliar, 
+             tem como função armazenar grandes quantidades de informações.
+             <input type="text" id="resp8">
+             <button class = "btn_bonito" onclick= "resp_btn8()"> Responder </button>
+             </div>`
+        
+    }
+
+    function resp_btn8() {
+        if (resp8.value == 'memoria de massa' || resp8.value == 'MEMORIA DE MASSA' || resp8.value == 'Memoria de Massa' || resp8.value == 'memória de massa' || resp8.value == 'MEMÓRIA DE MASSA' || resp8.value == 'Memória de Massa' ) {
+            resp_end.innerHTML += `<h4 class = "r8">MEMORIADEMASSA<h4>`;
+            ponto = ponto + 50;
+            total.innerHTML =`${ponto}`;
+        } else {
+            ponto = ponto - 50;
+            total.innerHTML = `${ponto}`;
+            alert('errooou')
+        }       
+    }
+
+    function btn9(){
+        div_quest.innerHTML= `<div class = "question">
+             Também conhecida como memória auxiliar, 
+             tem como função armazenar grandes quantidades de informações.
+             <input type="text" id="resp9">
+             <button class = "btn_bonito" onclick= "resp_btn8()"> Responder </button>
+             </div>`
+        
+    }
+
+    function resp_btn9() {
+        if (resp9.value == 'memoria de massa' || resp9.value == 'MEMORIA DE MASSA' || resp9.value == 'Memoria de Massa' || resp8.value == 'memória de massa' || resp8.value == 'MEMÓRIA DE MASSA' || resp8.value == 'Memória de Massa' ) {
+            resp_end.innerHTML += `<h4 class = "r9">MEMORIADEMASSA<h4>`;
+            ponto = ponto + 50;
+            total.innerHTML =`${ponto}`;
+        } else {
+            ponto = ponto - 50;
+            total.innerHTML = `${ponto}`;
+            alert('errooou')
+        }       
+    }
+
+
+
+    function btn012(){
+        div_quest.innerHTML= `<div class = "question">
+             Processador da Intel de modelo intermediário.
+             <input type="text" id="resp12">
+             <button class = "btn_bonito" onclick= "resp_btn12()"> Responder </button>
+             </div>`
+        
+    }
+
+    function resp_btn12() {
+        if (resp12.value == 'i5' || resp12.value == 'I5' ) {
+            resp_end.innerHTML += `<h4 class = "r12">I5<h4>`;
+            ponto = ponto + 50;
+            total.innerHTML =`${ponto}`;
+        } else {
+            ponto = ponto - 50;
+            total.innerHTML = `${ponto}`;
+            alert('errooou')
+        }
+    }    
+
+    function btn013(){
+        div_quest.innerHTML= `<div class = "question">
+             Processador da Intel de modelo intermediário.
+             <input type="text" id="resp13">
+             <button class = "btn_bonito" onclick= "resp_btn13()"> Responder </button>
+             </div>`
+        
+    }
+
+    function resp_btn13() {
+        if (resp13.value == 'i5' || resp13.value == 'I5' ) {
+            resp_end.innerHTML += `<h4 class = "r13">I5<h4>`;
+            ponto = ponto + 50;
+            total.innerHTML =`${ponto}`;
+        } else {
+            ponto = ponto - 50;
+            total.innerHTML = `${ponto}`;
+            alert('errooou')
+        }
+    }
+
+    function btn014(){
+        div_quest.innerHTML= `<div class = "question">
+             Processador da Intel criado em 2008
+             <input type="text" id="resp14">
+             <button class = "btn_bonito" onclick= "resp_btn14()"> Responder </button>
+             </div>`
+        
+    }
+
+    function resp_btn14() {
+        if (resp14.value == 'i7' || resp14.value == 'I7' ) {
+            resp_end.innerHTML += `<h4 class = "r14">I7<h4>`;
+            ponto = ponto + 50;
+            total.innerHTML =`${ponto}`;
+        } else {
+            ponto = ponto - 50;
+            total.innerHTML = `${ponto}`;
+            alert('errooou')
+        }
+    }
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+    <!-- /* <div id="perguntas">
         <p>1 - Teste<span id="amarelo">---</span></p>
     </div>
 
-    <!-- Matriz  -->
+     Matriz  
     <div id="matriz">
-        <!-- ul - coluna
+         ul - coluna
              li - linha
             
         cada coluna tem n linhas 
@@ -30,7 +353,7 @@
         cada linha representa um numero
 
         exemplo palavra "sim" é feita juntando a1 + a2+ a3 
-            -->
+           
         <ul>
             <li>
                 <input type="text" name="" class="borderAmarelo" id="a1">
@@ -107,7 +430,7 @@
         </ul>
     </div>
 
-    <!-- ao clicar na funcion validar ele chama uma function que verifica se o valor dos imput forma a palavra, caso contrario msg de erro  -->
+    // ao clicar na funcion validar ele chama uma function que verifica se o valor dos imput forma a palavra, caso contrario msg de erro  
     <button onclick="sim()">validar</button>
 </body>
 </html>
@@ -155,5 +478,5 @@
     .borderAmarelo{
         border: 1px solid yellow;
     }
-</style>
+</style>  -->
 
