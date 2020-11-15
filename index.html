@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    
     <div class="titulo">
         <h2>Bem Vindo a nossa Cruzadinha</h2>
     </div>  
@@ -47,7 +48,7 @@
                     <button id="btn14" onclick="btn014()">14</button>
                     <button id="btn15" onclick="btn015()">15</button>
                     <button id="btn16" onclick="btn016()">16</button>                    
-                    <img src="Imagens/cruzadinha_fundo .png" alt="">
+                    <img src="Imagens/curzadinha_fundo.png" alt="">
 
                     
                 </div> 
@@ -66,8 +67,8 @@
     function btn01(){
         div_quest.innerHTML= `<div class = "question">
              Central Process Unit, também conhecido como processador
-             é responsavel por calcular e realizar determinadas pelo usuario.
-             <input type="text" id="resp1">
+             é responsavel por calcular e realizar determinadas pelo usuario. <br>
+             <input type="text" id="resp1"> <br>
              <button class = "btn_bonito" onclick= "resp_btn1()"> Responder </button>
              </div>`
         
@@ -85,11 +86,11 @@
         }
     }
 
-    function btn2(){
+    function btn02(){
         div_quest.innerHTML= `<div class = "question">
              Unidade logica aritimetica é uma circuito digital 
-             que realiza operações de adição e booleana AND.
-             <input type="text" id="resp2">
+             que realiza operações de adição e booleana AND. <br>
+             <input type="text" id="resp2"> <br>
              <button class = "btn_bonito" onclick= "resp_btn2()"> Responder </button>
              </div>`
         
@@ -110,10 +111,10 @@
     
     function btn03(){
         div_quest.innerHTML= `<div class = "question">
-            circuitos digitais capaz de armazenar e deslocar informações
+             Circuitos digitais capaz de armazenar e deslocar informações
              binarias e são tipicamentes usados como dispositivos 
-             de armazenamentos temporario, se localiza proximo da cpu.
-             <input type="text" id="resp3">
+             de armazenamentos temporario, se localiza proximo da cpu. <br>
+             <input type="text" id="resp3"> <br>
              <button class = "btn_bonito" onclick= "resp_btn3()"> Responder </button>
              </div>`
         
@@ -131,10 +132,10 @@
         }
     }    
 
-    function btn4(){
+    function btn04(){
         div_quest.innerHTML= `<div class = "question">
-             É responsável por dar agilidade e velocidade para o funcionamento do sistema.
-             <input type="text" id="resp4">
+             É responsável por dar agilidade e velocidade para o funcionamento do sistema. <br>
+             <input type="text" id="resp4"> <br>
              <button class = "btn_bonito" onclick= "resp_btn4()"> Responder </button>
              </div>`
         
@@ -142,7 +143,7 @@
 
     function resp_btn4() {
         if (resp4.value == 'ram' || resp4.value == 'RAM' || resp4.value == 'Ram' ) {
-            resp_end.innerHTML += `<h4 class = "r4">RAM<h4>`;
+            resp_end.innerHTML += `<h4 class = "r4">R<br><br>A<br><br>M<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
         } else {
@@ -152,11 +153,11 @@
         }
     }
 
-    function btn5(){
+    function btn05(){
         div_quest.innerHTML= `<div class = "question">
              Suas informações foram gravadas pelo fabricante apenas uma vez
-             e após isso não podem ser alteradas ou apagas, apenas acessadas 
-             <input type="text" id="resp5">
+             e após isso não podem ser alteradas ou apagadas, apenas acessadas. <br>
+             <input type="text" id="resp5"> <br>
              <button class = "btn_bonito" onclick= "resp_btn5()"> Responder </button>
              </div>`
         
@@ -164,7 +165,7 @@
 
     function resp_btn5() {
         if (resp5.value == 'rom' || resp5.value == 'ROM' || resp5.value == 'Rom' ) {
-            resp_end.innerHTML += `<h4 class = "r5">ROM<h4>`;
+            resp_end.innerHTML += `<h4 class = "r5">R<br>O<br>M<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
         } else {
@@ -174,10 +175,10 @@
         }
     }
 
-    function btn6(){
+    function btn06(){
         div_quest.innerHTML= `<div class = "question">
-             Sigla de Erasable Programmable Read-Only Memory
-             <input type="text" id="resp6">
+             Sigla de Erasable Programmable Read-Only Memory. <br>
+             <input type="text" id="resp6"> <br>
              <button class = "btn_bonito" onclick= "resp_btn6()"> Responder </button>
              </div>`
         
@@ -195,11 +196,11 @@
         }
     }
 
-    function btn7(){
+    function btn07(){
         div_quest.innerHTML= `<div class = "question">
              Chip de memória de computador que mantém informações
-             armazenadas sem a necessidade de uma fonte de energia.
-             <input type="text" id="resp7">
+             armazenadas sem a necessidade de uma fonte de energia. <br>
+             <input type="text" id="resp7"> <br>
              <button class = "btn_bonito" onclick= "resp_btn7()"> Responder </button>
              </div>`
         
@@ -217,11 +218,11 @@
         }       
     }
 
-    function btn8(){
+    function btn08(){
         div_quest.innerHTML= `<div class = "question">
              Também conhecida como memória auxiliar, 
-             tem como função armazenar grandes quantidades de informações.
-             <input type="text" id="resp8">
+             tem como função armazenar grandes quantidades de informações. <br>
+             <input type="text" id="resp8"> <br>
              <button class = "btn_bonito" onclick= "resp_btn8()"> Responder </button>
              </div>`
         
@@ -229,7 +230,7 @@
 
     function resp_btn8() {
         if (resp8.value == 'memoria de massa' || resp8.value == 'MEMORIA DE MASSA' || resp8.value == 'Memoria de Massa' || resp8.value == 'memória de massa' || resp8.value == 'MEMÓRIA DE MASSA' || resp8.value == 'Memória de Massa' ) {
-            resp_end.innerHTML += `<h4 class = "r8">MEMORIADEMASSA<h4>`;
+            resp_end.innerHTML += `<h4 class = "r8">M<br>E<br>M<br>O<br>R<br>I<br>A<br>D<br>E<br>M<br>A<br>S<br>S<br>A<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
         } else {
@@ -239,19 +240,20 @@
         }       
     }
 
-    function btn9(){
+    function btn09(){
         div_quest.innerHTML= `<div class = "question">
-             Também conhecida como memória auxiliar, 
-             tem como função armazenar grandes quantidades de informações.
-             <input type="text" id="resp9">
-             <button class = "btn_bonito" onclick= "resp_btn8()"> Responder </button>
+             Permite que certos dispositivos de hardware
+             num computador acessem a memória do sistema 
+             para leitura e escrita independentemente da CPU. <br>
+             <input type="text" id="resp9"> <br>
+             <button class = "btn_bonito" onclick= "resp_btn9()"> Responder </button>
              </div>`
         
     }
 
     function resp_btn9() {
-        if (resp9.value == 'memoria de massa' || resp9.value == 'MEMORIA DE MASSA' || resp9.value == 'Memoria de Massa' || resp8.value == 'memória de massa' || resp8.value == 'MEMÓRIA DE MASSA' || resp8.value == 'Memória de Massa' ) {
-            resp_end.innerHTML += `<h4 class = "r9">MEMORIADEMASSA<h4>`;
+        if (resp9.value == 'dma' || resp9.value == 'DMA' || resp9.value == 'Dma' ) {
+            resp_end.innerHTML += `<h4 class = "r9">DMA<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
         } else {
@@ -261,20 +263,88 @@
         }       
     }
 
+    function btn010(){
+        div_quest.innerHTML= `<div class = "question">
+             Linha de controle usada para selecionar um 
+             ou um conjunto de circuitos integrados ligado a um barramento. <br>
+             <input type="text" id="resp10"> <br>
+             <button class = "btn_bonito" onclick= "resp_btn10()"> Responder </button>
+             </div>`
+        
+    }
 
+    function resp_btn10() {
+        if (resp10.value == 'cs' || resp10.value == 'CS' || resp10.value == 'Cs' ) {
+            resp_end.innerHTML += `<h4 class = "r10">C<br>S<h4>`;
+            ponto = ponto + 50;
+            total.innerHTML =`${ponto}`;
+        } else {
+            ponto = ponto - 50;
+            total.innerHTML = `${ponto}`;
+            alert('errooou')
+        }       
+
+    }
+
+    function btn011(){
+        div_quest.innerHTML= `<div class = "question">
+             Ajuda a transferir memoria. <br>
+             <input type="text" id="resp11"> <br>
+             <button class = "btn_bonito" onclick= "resp_btn11()"> Responder </button>
+             </div>`
+        
+    }
+
+    function resp_btn11() {
+        if (resp11.value == 'adress bus' || resp11.value == 'ADRESS BUS' || resp11.value == 'Adress Bus' || resp11.value == 'adressbus ' || resp11.value == 'ADRESSBUS' || resp11.value == 'AdressBus'  ) {
+            resp_end.innerHTML += `<h4 class = "r11">A<br>D<br>R<br>E<br>S<br>S<br>B<br>U<br>S<h4>`;
+            ponto = ponto + 50;
+            total.innerHTML =`${ponto}`;
+        } else {
+            ponto = ponto - 50;
+            total.innerHTML = `${ponto}`;
+            alert('errooou')
+        }       
+
+    }
 
     function btn012(){
         div_quest.innerHTML= `<div class = "question">
-             Processador da Intel de modelo intermediário.
-             <input type="text" id="resp12">
+             Dispositivo em que através do interior de um computador
+             são transportados dados e informações importantes. <br>
+             <input type="text" id="resp12"> <br>
              <button class = "btn_bonito" onclick= "resp_btn12()"> Responder </button>
              </div>`
         
     }
 
     function resp_btn12() {
-        if (resp12.value == 'i5' || resp12.value == 'I5' ) {
-            resp_end.innerHTML += `<h4 class = "r12">I5<h4>`;
+        if (resp12.value == 'data bus' || resp12.value == 'DATA BUS' || resp12.value == 'Data Bus' || resp12.value == 'databus ' || resp12.value == 'DATABUS' || resp12.value == 'DataBus'  ) {
+            resp_end.innerHTML += `<h4 class = "r12">D<br>A<br>T<br>A<br>B<br>U<br>S<h4>`;
+            ponto = ponto + 50;
+            total.innerHTML =`${ponto}`;
+        } else {
+            ponto = ponto - 50;
+            total.innerHTML = `${ponto}`;
+            alert('errooou')
+        }       
+
+    }
+
+
+
+    function btn013(){
+        div_quest.innerHTML= `<div class = "question"> <br>
+             Processador da Intel de modelo intermediário. <br>
+             <input type="text" id="resp13"> <br>
+             <button class = "btn_bonito" onclick= "resp_btn13()"> Responder </button>
+             </div>`
+        
+    }
+
+    function resp_btn13() {
+        if (resp13.value == 'i5' || resp13.value == 'I5' ) {
+            resp_end.innerHTML += `<h4 class = "r13">I<br>5<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
         } else {
@@ -284,18 +354,19 @@
         }
     }    
 
-    function btn013(){
+
+    function btn014(){
         div_quest.innerHTML= `<div class = "question">
-             Processador da Intel de modelo intermediário.
-             <input type="text" id="resp13">
-             <button class = "btn_bonito" onclick= "resp_btn13()"> Responder </button>
+             Processador da Intel criado em 2008. <br>
+             <input type="text" id="resp14"> <br>
+             <button class = "btn_bonito" onclick= "resp_btn14()"> Responder </button>
              </div>`
         
     }
 
-    function resp_btn13() {
-        if (resp13.value == 'i5' || resp13.value == 'I5' ) {
-            resp_end.innerHTML += `<h4 class = "r13">I5<h4>`;
+    function resp_btn14() {
+        if (resp14.value == 'i7' || resp14.value == 'I7' ) {
+            resp_end.innerHTML += `<h4 class = "r14">I7<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
         } else {
@@ -305,18 +376,39 @@
         }
     }
 
-    function btn014(){
+    function btn015(){
         div_quest.innerHTML= `<div class = "question">
-             Processador da Intel criado em 2008
-             <input type="text" id="resp14">
-             <button class = "btn_bonito" onclick= "resp_btn14()"> Responder </button>
+             Processador com dois nucleos. <br>
+             <input type="text" id="resp15"> <br>
+             <button class = "btn_bonito" onclick= "resp_btn15()"> Responder </button>
              </div>`
         
     }
 
-    function resp_btn14() {
-        if (resp14.value == 'i7' || resp14.value == 'I7' ) {
-            resp_end.innerHTML += `<h4 class = "r14">I7<h4>`;
+    function resp_btn15() {
+        if (resp15.value == 'dualcore' || resp15.value == 'DUALCORE'|| resp15.value == 'Dual Core' || resp15.value == 'DUAL CORE' || resp15.value == 'dual core'   ) {
+            resp_end.innerHTML += `<h4 class = "r15">D<br>U<br>A<br>L<br>C<br>O<br>R<br>E<h4>`;
+            ponto = ponto + 50;
+            total.innerHTML =`${ponto}`;
+        } else {
+            ponto = ponto - 50;
+            total.innerHTML = `${ponto}`;
+            alert('errooou')
+        }
+    }
+
+    function btn016(){
+        div_quest.innerHTML= `<div class = "question">
+            Processador com quatro nucleos. <br>
+             <input type="text" id="resp16"> <br>
+             <button class = "btn_bonito" onclick= "resp_btn16()"> Responder </button>
+             </div>`
+        
+    }
+
+    function resp_btn16() {
+        if (resp16.value == 'quadcore' || resp16.value == 'QUADCORE'|| resp16.value == 'Quad Core' || resp16.value == 'QUAD CORE'  ) {
+            resp_end.innerHTML += `<h4 class = "r16">QUADCORE<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
         } else {
