@@ -59,12 +59,12 @@
                     <button id="btn15" onclick="btn015()">15</button>
                     <button id="btn16" onclick="btn016()">16</button>                    
                     <img src="Imagens/curzadinha_fundo.png" alt="">
-  
+                    <button onclick="ganha()" id="black">ganha</button>   
+                    
                 </div> 
             </div>
         </div>
     </div>
-     
 </body>
 
 </html>
@@ -72,15 +72,33 @@
 <script>
 
     var ponto = 0;
+    valida1 = false;
+    valida2 = false;
+    valida3 = false;
+    valida4 = false;
+    valida5 = false;
+    valida6 = false;
+    valida7 = false;
+    valida8 = false;
+    valida9 = false;
+    valida10 = false;
+    valida11 = false;
+    valida12 = false;
+    valida13 = false;
+    valida14 = false;
+    valida15 = false;
+    valida16 = false;
 
     function btn01(){
-        div_quest.innerHTML= `<div class = "question">
+
+        if(!valida1){
+            div_quest.innerHTML= `<div class = "question">
              Central Process Unit, também conhecido como processador
-             é responsavel por calcular e realizar determinadas pelo usuario. <br>
+             é responsavel por calcular e realizar determinadas atividades pelo usuario. <br>
              <input type="text" id="resp1"> <br>
              <button class = "btn_bonito" onclick= "resp_btn1()"> Responder </button>
              </div>`
-        
+        }             
     }
 
     function resp_btn1() {
@@ -89,6 +107,8 @@
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
             som('foguete.mp3');
+            valida1 = true;
+            div_quest.innerHTML = "";
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
@@ -98,12 +118,14 @@
     }
 
     function btn02(){
-        div_quest.innerHTML= `<div class = "question">
+        if(!valida2){
+            div_quest.innerHTML= `<div class = "question">
              Unidade logica aritimetica é uma circuito digital 
              que realiza operações de adição e booleana AND. <br>
              <input type="text" id="resp2"> <br>
              <button class = "btn_bonito" onclick= "resp_btn2()"> Responder </button>
              </div>`
+        }
         
     }
 
@@ -113,6 +135,8 @@
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
             som('foguete.mp3');
+            div_quest.innerHTML = "";
+            valida2 = true;
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
@@ -123,13 +147,15 @@
     
     
     function btn03(){
-        div_quest.innerHTML= `<div class = "question">
+        if(!valida3){
+            div_quest.innerHTML= `<div class = "question">
              Circuitos digitais capaz de armazenar e deslocar informações
              binarias e são tipicamentes usados como dispositivos 
              de armazenamentos temporario, se localiza proximo da cpu. <br>
              <input type="text" id="resp3"> <br>
              <button class = "btn_bonito" onclick= "resp_btn3()"> Responder </button>
              </div>`
+        }
         
     }
 
@@ -139,6 +165,8 @@
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
             som('foguete.mp3');
+            valida3 = true;
+            div_quest.innerHTML = "";
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
@@ -148,13 +176,15 @@
     }    
 
     function btn04(){
-        div_quest.innerHTML= `<div class = "question">
+        if(!valida4){
+            div_quest.innerHTML= `<div class = "question">
              É responsável por dar agilidade e velocidade para o funcionamento do sistema. <br>
              <input type="text" id="resp4"> <br>
              <button class = "btn_bonito" onclick= "resp_btn4()"> Responder </button>
-             </div>`
-        
+             </div>`    
+        }
     }
+        
 
     function resp_btn4() {
         if (resp4.value == 'ram' || resp4.value == 'RAM' || resp4.value == 'Ram' ) {
@@ -162,6 +192,8 @@
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
             som('foguete.mp3');
+            valida4=true;
+            div_quest.innerHTML = "";
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
@@ -171,12 +203,14 @@
     }
 
     function btn05(){
-        div_quest.innerHTML= `<div class = "question">
+        if(!valida5){
+            div_quest.innerHTML= `<div class = "question">
              Suas informações foram gravadas pelo fabricante apenas uma vez
              e após isso não podem ser alteradas ou apagadas, apenas acessadas. <br>
              <input type="text" id="resp5"> <br>
              <button class = "btn_bonito" onclick= "resp_btn5()"> Responder </button>
              </div>`
+        }
         
     }
 
@@ -186,6 +220,8 @@
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
             som('foguete.mp3');
+            valida5 = true;
+            div_quest.innerHTML = "";
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
@@ -195,11 +231,13 @@
     }
 
     function btn06(){
-        div_quest.innerHTML= `<div class = "question">
+        if(!valida6){
+            div_quest.innerHTML= `<div class = "question">
              Sigla de Erasable Programmable Read-Only Memory. <br>
              <input type="text" id="resp6"> <br>
              <button class = "btn_bonito" onclick= "resp_btn6()"> Responder </button>
              </div>`
+        }
         
     }
 
@@ -209,6 +247,8 @@
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
             som('foguete.mp3');
+            valida6 = true;
+            div_quest.innerHTML = "";
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
@@ -218,12 +258,14 @@
     }
 
     function btn07(){
-        div_quest.innerHTML= `<div class = "question">
+        if(!valida7){
+            div_quest.innerHTML= `<div class = "question">
              Chip de memória de computador que mantém informações
              armazenadas sem a necessidade de uma fonte de energia. <br>
              <input type="text" id="resp7"> <br>
              <button class = "btn_bonito" onclick= "resp_btn7()"> Responder </button>
              </div>`
+        }
         
     }
 
@@ -233,6 +275,8 @@
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
             som('foguete.mp3');
+            valida7 = true;
+            div_quest.innerHTML = "";
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
@@ -242,12 +286,14 @@
     }
 
     function btn08(){
-        div_quest.innerHTML= `<div class = "question">
+        if(!valoda8){
+            div_quest.innerHTML= `<div class = "question">
              Também conhecida como memória auxiliar, 
              tem como função armazenar grandes quantidades de informações. <br>
              <input type="text" id="resp8"> <br>
              <button class = "btn_bonito" onclick= "resp_btn8()"> Responder </button>
              </div>`
+        }
         
     }
 
@@ -257,6 +303,8 @@
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
             som('foguete.mp3');
+            valida8 = true;
+            div_quest.div_quest = "";
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
@@ -266,13 +314,15 @@
     }
 
     function btn09(){
-        div_quest.innerHTML= `<div class = "question">
+        if(!valida9){
+            div_quest.innerHTML= `<div class = "question">
              Permite que certos dispositivos de hardware
              num computador acessem a memória do sistema 
              para leitura e escrita independentemente da CPU. <br>
              <input type="text" id="resp9"> <br>
              <button class = "btn_bonito" onclick= "resp_btn9()"> Responder </button>
              </div>`
+        }
         
     }
 
@@ -282,6 +332,8 @@
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
             som('foguete.mp3');
+            valida9 = true;
+            div_quest.innerHTML = "";
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
@@ -291,12 +343,14 @@
     }
 
     function btn010(){
-        div_quest.innerHTML= `<div class = "question">
+        if(!valida10){
+            div_quest.innerHTML= `<div class = "question">
              Linha de controle usada para selecionar um 
              ou um conjunto de circuitos integrados ligado a um barramento. <br>
              <input type="text" id="resp10"> <br>
              <button class = "btn_bonito" onclick= "resp_btn10()"> Responder </button>
              </div>`
+        }
         
     }
 
@@ -306,6 +360,8 @@
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
             som('foguete.mp3');
+            valida10 = true;
+            div_quest.innerHTML = "";
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
@@ -316,11 +372,13 @@
     }
 
     function btn011(){
-        div_quest.innerHTML= `<div class = "question">
+        if(!valida11){
+            div_quest.innerHTML= `<div class = "question">
              Ajuda a transferir memoria. <br>
              <input type="text" id="resp11"> <br>
              <button class = "btn_bonito" onclick= "resp_btn11()"> Responder </button>
              </div>`
+        }
         
     }
 
@@ -330,6 +388,8 @@
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
             som('foguete.mp3');
+            valida11 = true;
+            div_quest.innerHTML = "";
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
@@ -340,12 +400,14 @@
     }
 
     function btn012(){
-        div_quest.innerHTML= `<div class = "question">
+        if(!valida11){
+            div_quest.innerHTML= `<div class = "question">
              Dispositivo em que através do interior de um computador
              são transportados dados e informações importantes. <br>
              <input type="text" id="resp12"> <br>
              <button class = "btn_bonito" onclick= "resp_btn12()"> Responder </button>
              </div>`
+        }
         
     }
 
@@ -355,6 +417,8 @@
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
             som('foguete.mp3');
+            valida11 = true;
+            div_quest.innerHTML = "";
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
@@ -367,11 +431,13 @@
 
 
     function btn013(){
-        div_quest.innerHTML= `<div class = "question"> <br>
+        if(!valida13){
+            div_quest.innerHTML= `<div class = "question"> <br>
              Processador da Intel de modelo intermediário. <br>
              <input type="text" id="resp13"> <br>
              <button class = "btn_bonito" onclick= "resp_btn13()"> Responder </button>
              </div>`
+        }
         
     }
 
@@ -381,6 +447,8 @@
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
             som('foguete.mp3');
+            valida13 = true;
+            div_quest.innerHTML = "";
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
@@ -391,11 +459,13 @@
 
 
     function btn014(){
-        div_quest.innerHTML= `<div class = "question">
+        if(!valida14){
+            div_quest.innerHTML= `<div class = "question">
              Processador da Intel criado em 2008. <br>
              <input type="text" id="resp14"> <br>
              <button class = "btn_bonito" onclick= "resp_btn14()"> Responder </button>
              </div>`
+        }
         
     }
 
@@ -406,6 +476,8 @@
             total.innerHTML =`${ponto}`;
             flag = false;
             som('foguete.mp3');
+            valida14 = true;
+            div_quest.innerHTML = "";
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
@@ -415,11 +487,13 @@
     }
 
     function btn015(){
-        div_quest.innerHTML= `<div class = "question">
+        if(!valida15){
+            div_quest.innerHTML= `<div class = "question">
              Processador com dois nucleos. <br>
              <input type="text" id="resp15"> <br>
              <button class = "btn_bonito" onclick= "resp_btn15()"> Responder </button>
              </div>`
+        }
         
     }
 
@@ -429,6 +503,8 @@
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
             som('foguete.mp3');
+            valida15 = true;
+            div_quest.innerHTML = "";
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
@@ -438,11 +514,13 @@
     }
 
     function btn016(){
-        div_quest.innerHTML= `<div class = "question">
+        if(!valida16){
+            div_quest.innerHTML= `<div class = "question">
             Processador com quatro nucleos. <br>
              <input type="text" id="resp16"> <br>
              <button class = "btn_bonito" onclick= "resp_btn16()"> Responder </button>
              </div>`
+        }
         
     }
 
@@ -452,6 +530,8 @@
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
             som('foguete.mp3');
+            valida16 = true;
+            div_quest.innerHTML = "";
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
@@ -507,5 +587,9 @@
             flag = false;
         }
     }
+    function ganha(){
+        ponto += 700;
+    }
     
-</script>
+    
+</script> 

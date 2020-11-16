@@ -474,7 +474,10 @@ margin: 0;
     animation: mao2 2s linear infinite;
     transition: all 3s; 
 }
-
+#black{
+    background-color: black;
+    border: none;
+}
 @keyframes mao2{
     0%{ margin-top: -203px;}
 
