@@ -73,6 +73,14 @@ margin: 0;
     background-color: black;
 }
 
+#span01{
+    color: white;
+    text-align: center;
+    font-size: 34px;
+    padding-top: 32px;
+    display: flex;
+}
+
 .pontos{
     width: 87%;
     height: 181px;
