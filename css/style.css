@@ -2,8 +2,20 @@ h2{
     margin: 0;
 }
 
+h3{
+    margin: 0;
+    text-align: center;
+    font-size: 47px;
+}
+
 body{
 margin: 0;
+}
+
+#total{
+    text-align: center;
+    margin-top: 22px;
+    font-size: 64px;
 }
 
 .titulo{
@@ -12,12 +24,28 @@ margin: 0;
     background-color: black;
 }
 
+.titulo2{
+    width: 100%;
+    color: white;
+    background-color: black;
+    z-index: 1;
+}
+
 .container{
     width: 100%;
     align-items: center;
     justify-content: center; 
     display: flex;
     background-color: black;
+}
+
+.parabains{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    color: white;
+    background-color: yellow;
+    
 }
 
 .box_maior{
@@ -96,11 +124,16 @@ margin: 0;
     color: white;
 }
 
+#btn1:hover{
+    background-color: rgb(163, 0, 212);
+}
+
+
 .r1{
     position: absolute;
     margin-top: 18px;
     margin-left: 205px;
-}
+} 
 
 
 #btn2{
@@ -110,6 +143,10 @@ margin: 0;
     margin-left: 558px;
     background-color: rgb(99, 0, 129);
     color: white;
+}
+
+#btn2:hover{
+    background-color: rgb(163, 0, 212);
 }
 
 .r2{
@@ -128,6 +165,10 @@ margin: 0;
     color: white;
 }
 
+#btn3:hover{
+    background-color: rgb(163, 0, 212);
+}
+
 .r3{
     position: absolute;
     letter-spacing: 26px;
@@ -142,6 +183,10 @@ margin: 0;
     margin-left: 377px;
     background-color: rgb(99, 0, 129);
     color: white;
+}
+
+#btn4:hover{
+    background-color: rgb(163, 0, 212);
 }
 
 .r4{
@@ -161,6 +206,10 @@ margin: 0;
     color: white;
 }
 
+#btn5:hover{
+    background-color: rgb(163, 0, 212);
+}
+
 .r5{
     position: absolute;
     margin-top: 263px;
@@ -175,6 +224,10 @@ margin: 0;
     margin-left: 124px;
     background-color: rgb(99, 0, 129);
     color: white;
+}
+
+#btn6:hover{
+    background-color: rgb(163, 0, 212);
 }
 
 .r6{
@@ -193,6 +246,10 @@ margin: 0;
     color: white;
 }
 
+#btn7:hover{
+    background-color: rgb(163, 0, 212);
+}
+
 .r7{
     position: absolute;
     margin-top: 449px;
@@ -207,6 +264,10 @@ margin: 0;
     margin-top: 24px;
     background-color: rgb(99, 0, 129);
     color: white;
+}
+
+#btn8:hover{
+    background-color: rgb(163, 0, 212);
 }
 
 .r8{
@@ -225,6 +286,10 @@ margin: 0;
     color: white;
 }
 
+#btn9:hover{
+    background-color: rgb(163, 0, 212);
+}
+
 .r9{
     position: absolute;
     margin-top: 356px;
@@ -238,6 +303,10 @@ margin: 0;
     margin-top: 207px;
     background-color: rgb(99, 0, 129);
     color: white;
+}
+
+#btn10:hover{
+    background-color: rgb(163, 0, 212);
 }
 
 .r10{
@@ -255,6 +324,11 @@ margin: 0;
     color: white;
 }
 
+
+#btn11:hover{
+    background-color: rgb(163, 0, 212);
+}
+
 .r11{
     position: absolute;
     margin-left: 532px;
@@ -268,6 +342,11 @@ margin: 0;
     margin-top: 55px;
     background-color: rgb(99, 0, 129);
     color: white;
+}
+
+
+#btn12:hover{
+    background-color: rgb(163, 0, 212);
 }
 
 .r12{
@@ -285,6 +364,10 @@ margin: 0;
     color: white;
 }
 
+#btn13:hover{
+    background-color: rgb(163, 0, 212);
+}
+
 .r13{
     position: absolute;
     margin-top: 263px;
@@ -300,11 +383,16 @@ margin: 0;
     color: white;
 }
 
+#btn14:hover{
+    background-color: rgb(163, 0, 212);
+}
+
 .r14{
     position: absolute;
-    margin-left: 317px;
+    margin-left: 332px;
     margin-top: 206px;
     letter-spacing: 12px;
+    
 }
 
 #btn15{
@@ -343,3 +431,46 @@ margin: 0;
     margin-left: 146px;
 }
 
+
+
+#ft1{
+    height: 348px;
+    margin-top: 299px;
+}
+
+#ft2{
+    margin-top: -207px; 
+    height: 213px;
+    animation: mao1 2s linear infinite;
+    transition: all 2s; 
+}
+
+ @keyframes mao1{
+    0%{ margin-top: -207px;}
+
+    50%{ margin-top:-296px;}
+
+    100%{ margin-top: -207px;}
+} 
+
+#ft01{
+    height: 492px;
+    margin-top: 156px;
+    margin-left: 366px;
+}
+
+#ft02{
+    margin-top: -203px;
+    height: 203px;
+    margin-left: 416px;
+    animation: mao2 2s linear infinite;
+    transition: all 3s; 
+}
+
+@keyframes mao2{
+    0%{ margin-top: -203px;}
+
+    50%{ margin-top:-275px;}
+
+    100%{ margin-top: -203px;}
+} 

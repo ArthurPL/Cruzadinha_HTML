@@ -16,21 +16,31 @@
 </head>
 <body>
     
-    <div class="titulo">
-        <h2>Bem Vindo a nossa Cruzadinha</h2>
+    <div class="titulo" style="display: block;">
+        <h2> <marquee>Bem Vindo a nossa Cruzadinha </marquee> </h2>
     </div>  
+
+    <div class="titulo2" style="display: none;">
+        <h2> <marquee>Oloquinho meu, você atingiu a maior pontuação! </marquee> </h2>
+    </div>  
+
+    <!-- <div class="parabains" style="display: none;">Oloquinho meu, você atingiu a maior pontuação!</div> -->
 
     <div class="container">
         <div class="box_maior">
             <div class="minibox1">
-                <div class="perguntas">
-                    <div id="div_quest"></div>
+                <div class="perguntas" style="display: block;" id="phtml">
+                    <div id="div_quest" ></div>
                     <br>
                 </div>
-                <div class="pontos"> <h3> Pontos :</h3><div id="total"></div></div>
+                <div class="pontos" id="phtml2" style="display: block;"> <h3> Pontos :</h3><div id="total"></div></div>
+                <img src="Imagens/davidzada.png" id="ft1" style="display: none;" alt="">
+                <img src="Imagens/maozada_davidzada.png" id="ft2" style="display: none;" alt="">
             </div>
             <div class="minibox2">
-                <div class="img_cruz">
+                <img src="Imagens/tutizada.png" id="ft01" style="display: none;" alt=""> 
+                <img src="Imagens/maozada_tutizada.png" id="ft02" style="display: none;" alt="">
+                <div class="img_cruz" id="imgcruz01" style="display: block;">
                     <div id="resp_end"></div>
                     <button id="btn1" onclick="btn01()">1</button>
                     <button id="btn2" onclick="btn02()">2</button>
@@ -49,8 +59,7 @@
                     <button id="btn15" onclick="btn015()">15</button>
                     <button id="btn16" onclick="btn016()">16</button>                    
                     <img src="Imagens/curzadinha_fundo.png" alt="">
-
-                    
+  
                 </div> 
             </div>
         </div>
@@ -76,13 +85,15 @@
 
     function resp_btn1() {
         if (resp1.value == 'cpu' || resp1.value == 'CPU' || resp1.value == 'Cpu' ) {
-            resp_end.innerHTML += `<h4 class = "r1">C<br><br>P<br><br>U <h4>`;
+            resp_end.innerHTML += `<h4 class = "r1">C<br><br>P<br><br>U<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
+            som('foguete.mp3');
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
-            alert('errooou')
+            flag = false;
+            som('errou.mp3');
         }
     }
 
@@ -101,10 +112,12 @@
             resp_end.innerHTML += `<h4 class = "r2">ULA<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
+            som('foguete.mp3');
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
-            alert('errooou')
+            flag = false;
+            som('errou.mp3');
         }
     }   
     
@@ -125,10 +138,12 @@
             resp_end.innerHTML += `<h4 class = "r3">REGISTRADORES<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
+            som('foguete.mp3');
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
-            alert('errooou')
+            flag = false;
+            som('errou.mp3');
         }
     }    
 
@@ -143,13 +158,15 @@
 
     function resp_btn4() {
         if (resp4.value == 'ram' || resp4.value == 'RAM' || resp4.value == 'Ram' ) {
-            resp_end.innerHTML += `<h4 class = "r4">R<br><br>A<br><br>M<h4>`;
+            resp_end.innerHTML += `<h4 class = "r4"> <span  style = 'opacity: 0;'>R</span><br><br>A<br><br>M<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
+            som('foguete.mp3');
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
-            alert('errooou')
+            flag = false;
+            som('errou.mp3');
         }
     }
 
@@ -168,10 +185,12 @@
             resp_end.innerHTML += `<h4 class = "r5">R<br>O<br>M<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
+            som('foguete.mp3');
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
-            alert('errooou')
+            flag = false;
+            som('errou.mp3');
         }
     }
 
@@ -186,13 +205,15 @@
 
     function resp_btn6() {
         if (resp6.value == 'eprom' || resp6.value == 'EPROM' || resp6.value == 'Eprom' ) {
-            resp_end.innerHTML += `<h4 class = "r6">EPROM<h4>`;
+            resp_end.innerHTML += `<h4 class = "r6">E<span  style = 'opacity: 0;'>P</span>ROM<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
+            som('foguete.mp3');
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
-            alert('errooou')
+            flag = false;
+            som('errou.mp3');
         }
     }
 
@@ -211,10 +232,12 @@
             resp_end.innerHTML += `<h4 class = "r7">FLASH<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
+            som('foguete.mp3');
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
-            alert('errooou')
+            flag = false;
+            som('errou.mp3');
         }       
     }
 
@@ -230,13 +253,15 @@
 
     function resp_btn8() {
         if (resp8.value == 'memoria de massa' || resp8.value == 'MEMORIA DE MASSA' || resp8.value == 'Memoria de Massa' || resp8.value == 'memória de massa' || resp8.value == 'MEMÓRIA DE MASSA' || resp8.value == 'Memória de Massa' ) {
-            resp_end.innerHTML += `<h4 class = "r8">M<br>E<br>M<br>O<br>R<br>I<br>A<br>D<br>E<br>M<br>A<br>S<br>S<br>A<h4>`;
+            resp_end.innerHTML += `<h4 class = "r8"> <span  style = 'opacity: 0;'>M</span><br>E<br>M<br>O<br>R<br>I<br>A<br><span  style = 'opacity: 0;'>D</span><br>E<br>M<br>A<br>S<br>S<br><span  style = 'opacity: 0;'>A</span><h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
+            som('foguete.mp3');
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
-            alert('errooou')
+            flag = false;
+            som('errou.mp3');
         }       
     }
 
@@ -256,10 +281,12 @@
             resp_end.innerHTML += `<h4 class = "r9">DMA<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
+            som('foguete.mp3');
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
-            alert('errooou')
+            flag = false;
+            som('errou.mp3');
         }       
     }
 
@@ -275,13 +302,15 @@
 
     function resp_btn10() {
         if (resp10.value == 'cs' || resp10.value == 'CS' || resp10.value == 'Cs' ) {
-            resp_end.innerHTML += `<h4 class = "r10">C<br>S<h4>`;
+            resp_end.innerHTML += `<h4 class = "r10">C<br><span  style = 'opacity: 0;'>S</span><h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
+            som('foguete.mp3');
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
-            alert('errooou')
+            flag = false;
+            som('errou.mp3');
         }       
 
     }
@@ -297,13 +326,15 @@
 
     function resp_btn11() {
         if (resp11.value == 'adress bus' || resp11.value == 'ADRESS BUS' || resp11.value == 'Adress Bus' || resp11.value == 'adressbus ' || resp11.value == 'ADRESSBUS' || resp11.value == 'AdressBus'  ) {
-            resp_end.innerHTML += `<h4 class = "r11">A<br>D<br>R<br>E<br>S<br>S<br>B<br>U<br>S<h4>`;
+            resp_end.innerHTML += `<h4 class = "r11"><span  style = 'opacity: 0;'>A</span><br>D<br>R<br>E<br>S<br>S<br>B<br>U<br>S<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
+            som('foguete.mp3');
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
-            alert('errooou')
+            flag = false;
+            som('errou.mp3');
         }       
 
     }
@@ -320,13 +351,15 @@
 
     function resp_btn12() {
         if (resp12.value == 'data bus' || resp12.value == 'DATA BUS' || resp12.value == 'Data Bus' || resp12.value == 'databus ' || resp12.value == 'DATABUS' || resp12.value == 'DataBus'  ) {
-            resp_end.innerHTML += `<h4 class = "r12">D<br>A<br>T<br>A<br>B<br>U<br>S<h4>`;
+            resp_end.innerHTML += `<h4 class = "r12">D<br>A<br>T<br>A<br>B<br><span  style = 'opacity: 0;'>U</span><br><span  style = 'opacity: 0;'>S</span><h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
+            som('foguete.mp3');
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
-            alert('errooou')
+            flag = false;
+            som('errou.mp3');
         }       
 
     }
@@ -347,10 +380,12 @@
             resp_end.innerHTML += `<h4 class = "r13">I<br>5<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
+            som('foguete.mp3');
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
-            alert('errooou')
+            flag = false;
+            som('errou.mp3');
         }
     }    
 
@@ -366,13 +401,16 @@
 
     function resp_btn14() {
         if (resp14.value == 'i7' || resp14.value == 'I7' ) {
-            resp_end.innerHTML += `<h4 class = "r14">I7<h4>`;
+            resp_end.innerHTML += `<h4 class = "r14"><span  style = 'opacity: 0;'>I</span>7<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
+            flag = false;
+            som('foguete.mp3');
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
-            alert('errooou')
+            flag = false;
+            som('errou.mp3');
         }
     }
 
@@ -387,13 +425,15 @@
 
     function resp_btn15() {
         if (resp15.value == 'dualcore' || resp15.value == 'DUALCORE'|| resp15.value == 'Dual Core' || resp15.value == 'DUAL CORE' || resp15.value == 'dual core'   ) {
-            resp_end.innerHTML += `<h4 class = "r15">D<br>U<br>A<br>L<br>C<br>O<br>R<br>E<h4>`;
+            resp_end.innerHTML += `<h4 class = "r15">D<br>U<br>A<br>L<br>C<br>O<br>R<br><span  style = 'opacity: 0;'>E</span><h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
+            som('foguete.mp3');
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
-            alert('errooou')
+            flag = false;
+            som('errou.mp3');
         }
     }
 
@@ -407,168 +447,65 @@
     }
 
     function resp_btn16() {
-        if (resp16.value == 'quadcore' || resp16.value == 'QUADCORE'|| resp16.value == 'Quad Core' || resp16.value == 'QUAD CORE'  ) {
+        if (resp16.value == 'quadcore' || resp16.value == 'QUADCORE'|| resp16.value == 'Quad Core' || resp16.value == 'QUAD CORE' || resp16.value == 'quad core' ) {
             resp_end.innerHTML += `<h4 class = "r16">QUADCORE<h4>`;
             ponto = ponto + 50;
             total.innerHTML =`${ponto}`;
+            som('foguete.mp3');
         } else {
             ponto = ponto - 50;
             total.innerHTML = `${ponto}`;
-            alert('errooou')
+            flag = false;
+            som('errou.mp3');
+        }
+    }
+
+    
+
+
+
+    function verificar() {
+        if (ponto  >= 800) {
+            ft1.style.display = "block";
+            ft2.style.display = "block";
+            ft01.style.display = "block";
+            ft02.style.display = "block";
+            imgcruz01.style.display = "none";
+            phtml.style.display = "none";
+            phtml2.style.display = "none";
+            flag = false;
+            som('tantantã.mp3');
+            titulo.style.display = "none";
+            titulo2.style.display = "block";
+        } 
+        
+    }
+    setInterval(() => {
+        verificar()
+    }, 1000);
+
+    // var flag = decide se o parametro(audio) vai rodar ou não 
+    // tem q ser false pra ele adicionar o audio pq se estiver 
+    //true ele cai pro else, onde ele remove o audio
+    var flag = false;
+    
+
+    // createElement = se a função cair no if ele vai criar uma tag chamada audio no html
+    // audio.src = music = busca o audio q vc selecionou -- mesma coisa que o image.src
+    // autoplay = roda o audio automaticamente
+    //appendChild = adiciona um filho no body
+    function som(music){
+        if (flag == false){ 
+            audio = document.createElement('audio');
+            audio.src = music;
+            audio.autoplay = true;
+            flag = true;
+            document.body.appendChild(audio);
+        }
+        else{
+            document.body.removeChild(audio);
+            flag = false;
         }
     }
     
 </script>
-
-
-
-
-
-
-
-
-
-
-    <!-- /* <div id="perguntas">
-        <p>1 - Teste<span id="amarelo">---</span></p>
-    </div>
-
-     Matriz  
-    <div id="matriz">
-         ul - coluna
-             li - linha
-            
-        cada coluna tem n linhas 
-
-        cada coluna representa uma letra
-
-        cada linha representa um numero
-
-        exemplo palavra "sim" é feita juntando a1 + a2+ a3 
-           
-        <ul>
-            <li>
-                <input type="text" name="" class="borderAmarelo" id="a1">
-            </li>
-            <li>
-                <input type="text" name="" class="borderAmarelo" id="a2">
-            </li>
-            <li>
-                <input type="text" name="" class="borderAmarelo" id="a3">
-            </li>
-            <li class="off">
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <input type="text" name="" id="b1">
-            </li>
-            <li>
-                <input type="text" name="" id="b2">
-            </li>
-            <li>
-                <input type="text" name="" id="b3">
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-        </ul>
-    </div>
-
-    // ao clicar na funcion validar ele chama uma function que verifica se o valor dos imput forma a palavra, caso contrario msg de erro  
-    <button onclick="sim()">validar</button>
-</body>
-</html>
-
-<script>
-
-    var valorA1;
-    var valorA2;
-    var valorA3;
-    function sim(){
-        valorA1 = a1.value;
-        valorA2 = a2.value;
-        valorA3 = a3.value;
-        if(valorA1 == "s" && valorA2 == "i" && valorA3 == "m"){
-            alert("Sim");
-        }else{
-            alert("errouuuu");
-        }
-    }
-</script>
-<style>
-    ul{
-        float: left;
-        padding: 0;
-    }
-    li{
-        border: 1px solid black;
-        height: 25px;
-        width: 25px;
-        list-style: none;
-    }
-    input{
-        border:none;
-        height:20px;
-        width:20px;
-    }
-    .off{
-        background-color: gray;
-    }
-    #amarelo{
-        color:yellow;
-        background-color:yellow;
-
-    }
-    .borderAmarelo{
-        border: 1px solid yellow;
-    }
-</style>  -->
-
